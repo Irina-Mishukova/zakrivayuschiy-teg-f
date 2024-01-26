@@ -27,3 +27,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.header {
+  border: 2px solid #000;
+  margin-block-start: 102px;
+  margin-block-end: 104px;
+  background-color: var(--background-color);
+  text-align: center;
+
+}
