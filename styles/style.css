@@ -32,7 +32,31 @@
   border: 2px solid #000;
   margin-block-start: 102px;
   margin-block-end: 104px;
+  padding-block-start: 120px;
+  padding-block-end: 25px;
   background-color: var(--background-color);
   text-align: center;
+  font-family: var(--accent-font);
+}
 
+.header__title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  padding-block-end: 20px;
+}
+
+span {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.theme-menu__button {
+  background-color: transparent;
+  border: none;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-block-start: 25px;
+  font-size: 14px;
 }
