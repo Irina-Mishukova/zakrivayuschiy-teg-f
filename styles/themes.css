@@ -8,9 +8,22 @@
 :root.theme-dark {
     --background-color: #000;
     --accent-color: #00CC14;
+    --font-weight-card-title: 785;
+    --font-weight-card-text: 465;
 }
 
 :root.theme-light {
     --background-color: #FFF;
     --accent-color: #000;
+    --font-weight-card-title: 700;
+    --font-weight-card-text: 400;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000;
+        --accent-color: #00CC14;
+        --font-weight-card-title: 785;
+        --font-weight-card-text: 465;
+    }
+  }
