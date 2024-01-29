@@ -64,6 +64,20 @@
   border: none;
 }
 
+.theme-menu__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+  border-block-end: 2px solid;
+}
+
 .card {
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
