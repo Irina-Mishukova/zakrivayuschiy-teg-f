@@ -64,6 +64,10 @@
   border: none;
 }
 
+.theme-menu__button:disabled::before {
+   content: '▶';
+}
+
 .theme-menu__button:hover {
   opacity: 0.6;
   cursor: pointer;
