@@ -64,17 +64,59 @@
   border: none;
 }
 /* реализация движения стрелки в меню навигации */
+
 .theme-menu__button::before {
   content: '';
   padding: 0;
-  transition: padding 2s;
 }
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+} 
 
 .theme-menu__button:disabled::before {
   content: '▶';
-  padding-inline-end: 4px;
+  animation: arrow_shift 2s infinite;
 } 
+
+  @keyframes arrow_shift {
+  0% {
+    padding-inline-end: 0px;
+  }
+  50% {
+    padding-inline-end: 5px;
+  }
+  100% {
+    padding-inline-end: 0px;
+  }
+} 
+
+/* @keyframes arrow_nav {
+  0% {
+    padding-inline-start: 5px;
+  }
+  50% {
+    padding-inline-start: 0px;
+  }
+  100% {
+    padding-inline-start: 5px;
+  }
+}  */
+
+/* @keyframes arrow_nav {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} */
+
 /* реализация движения стрелки в меню навигации */
+
 .theme-menu__button:hover {
   opacity: 0.6;
   cursor: pointer;
