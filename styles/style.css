@@ -57,6 +57,13 @@
   gap: 14px;
   padding-block-start: 25px;
   font-size: 14px;
+  text-align: left;
+  /* position: relative; */
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: center;
 }
 
 .theme-menu__button {
@@ -76,44 +83,27 @@
 
 .theme-menu__button:disabled::before {
   content: '▶';
-  animation: arrow_shift 2s infinite;
+  animation: arrow_shift 1s infinite;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  left: -100px;
 } 
 
-  @keyframes arrow_shift {
+.theme-menu__item {
+  position: relative;
+}
+
+@keyframes arrow_shift {
   0% {
-    padding-inline-end: 0px;
+  right: 0px;
   }
-  50% {
+  /* 50% {
     padding-inline-end: 5px;
-  }
+  } */
   100% {
-    padding-inline-end: 0px;
+  right: 4px;
   }
 } 
-
-/* @keyframes arrow_nav {
-  0% {
-    padding-inline-start: 5px;
-  }
-  50% {
-    padding-inline-start: 0px;
-  }
-  100% {
-    padding-inline-start: 5px;
-  }
-}  */
-
-/* @keyframes arrow_nav {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-} */
 
 /* реализация движения стрелки в меню навигации */
 
