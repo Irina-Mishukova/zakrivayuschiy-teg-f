@@ -80,6 +80,7 @@
 
 .theme-menu__button:disabled {
   opacity: 0.6;
+  pointer-events: none;
 } 
 
 .theme-menu__button:disabled::before {
@@ -191,10 +192,6 @@
 
 }
 
-.card__like-button .button__text {
-
-}
-
 .card__like-button {
   border: none;
   background-color: transparent;
@@ -216,6 +213,38 @@
 .card__like-button:focus-visible {
   box-shadow: 3px 3px 0px var(--accent-color);
   transition: box-shadow 0.5s;
+}
+
+/* .card__like-button:hover {
+  cursor: pointer;
+}
+
+.card__like-button::after {
+  content: '';
+  display: block;
+  height: 38px;
+  scale: 0;
+  transition: scaleX(0) 1s;
+  background-color: var(--accent-color);
+}
+
+.card__like-button::after:hover {
+  transition: scaleX(1);
+} */
+
+.card__like-button::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 38px;
+  background-color: var(--accent-color);
+  transition: width 300ms, background-color 1s;
+}
+
+.card__like-button:hover::after {
+  width: 100%;
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* ⇈ реалитзация кнопки like ⇈ */
