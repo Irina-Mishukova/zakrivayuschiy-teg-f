@@ -159,7 +159,7 @@
   color: var(--accent-color);
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #FFF;
-  text-shadow:0px 0px 5px #FFF;
+  text-shadow: 0px 0px 5px #FFF;
   opacity: 0.5;
   text-transform: uppercase;
   
@@ -203,6 +203,19 @@
   margin: 25px 25px 25px 0px;
   width: 130px;
   height: 38px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__like-button:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 3px 3px 0px var(--accent-color);
+  transition: box-shadow 0.5s;
 }
 
 /* ⇈ реалитзация кнопки like ⇈ */
