@@ -231,6 +231,14 @@
   transform: translateX(0);
 }
 
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--buttom-like-text-color);
+  mix-blend-mode: difference;
+  cursor: pointer;
+}
+
 /* ⇈ реалитзация кнопки like ⇈ */
 
 .card__text {
