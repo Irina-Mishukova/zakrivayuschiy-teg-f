@@ -179,7 +179,7 @@
   font-size: 18px;
 }
 
-/*⇊ реалитзация кнопки like ⇊*/
+/*⇊ реалитзация кнопки like-button ⇊*/
 
 .card__button {
   display: flex;
@@ -199,10 +199,6 @@
   overflow: hidden;
   position: relative;
 }
-
-/* .card__icon-button:focus {
-  outline: none;
-} */
 
 .card__like-button:focus {
   outline: none;
@@ -239,14 +235,33 @@
   cursor: pointer;
 }
 
-/* ⇈ реалитзация кнопки like ⇈ */
+/* ⇈ реалитзация кнопки like-button ⇈ */
 
-.card__text {
-  display: grid;
-  gap: 27px;
-  padding: 25px 25px 0px;
-  font-size: 18px;
+/* ⇊ реализация сердечка like-icon ⇊ */
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 34px;
+  outline: 2px solid;
+  color: transparent;
 }
+
+.card__icon-button:focus {
+  border: none;
+}
+
+.card__icon-button:focus-visible {
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.like-icon {
+  height: 100%;
+}
+
+/* ⇈ реализация сердечка like-icon ⇈ */
 
 .footer__button {
   border: none;
