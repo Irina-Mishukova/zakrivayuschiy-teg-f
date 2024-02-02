@@ -374,6 +374,34 @@
   font-size: 14px;
 }
 
+/* ⇊ реализация dialog ⇊ */
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.6);
+} 
+
+dialog {
+  background-color: var(--background-color);
+  border: none;
+  outline: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.dialog_button {
+  background-color: var(--background-color);
+  border: none;
+  outline: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* ⇈ реализация dialog ⇈ */
+
 @media (width <= 375px) {
   .header{
     width: 100vw;

@@ -103,17 +103,21 @@
       </section>
     </main>
     <footer>
-      <button class="footer__button">
+      <button class="footer__button"     type="button" 
+      onclick="window['dialog-id'].showModal()" 
+      aria-controls="dialog-id" >
         <span class="button__text">
           Сохранить на память
         </span>
       </button>
-      <dialog>
-        <h2>Подпишитесь на нашу рассылку</h2>
+      <dialog id="dialog-id">
         <form>
-            <label for="email">Введите вашу почту</label>
-            <input type="email" id="email" placeholder="test@example.com">
-            <button type="submit">Подписаться</button>
+            <span>
+              Вставьте дискету, чтобы продолжить
+            </span>
+            <button class="dialog_button" type="submit">
+              ок
+            </button>
         </form>
     </dialog>
     </footer>
