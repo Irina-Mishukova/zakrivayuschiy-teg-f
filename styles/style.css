@@ -98,13 +98,13 @@
 
 @keyframes arrow_shift {
   0% {
-  right: 0px;
+    right: 0px;
   }
   50% {
-  right: 4px;
+    right: 4px;
   }
   100% {
-  right: 0px;
+    right: 0px;
   }
 } 
 
@@ -296,14 +296,12 @@
 
 .like-icon:active .core {
   opacity: 1;
-  cursor: pointer;
   transition-delay: 0s;
   fill: var(--heart-filling-color);
 }
 
 .like-icon:active .main-body {
   opacity: 1;
-  cursor: pointer;
   transition-delay: 0.05s;
   fill: var(--heart-filling-color);
 }
@@ -337,6 +335,21 @@
 
   100% {
     opacity: 1;
+    }
+}
+
+.like-icon.is-liked .heart {
+   animation: heart-scale 0.3s ease-in 0.1s 1 normal;
+   transform-origin: center;
+}
+
+@keyframes heart-scale {
+  0% {
+    transform: scale(1)
+    }
+
+  100% {
+    transform: scale(1.5)
     }
 }
 
