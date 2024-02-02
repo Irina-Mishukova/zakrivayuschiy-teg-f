@@ -289,6 +289,21 @@
   transition-delay: 0.05s;
 }
 
+.like-icon:active .core {
+  opacity: 1;
+  cursor: pointer;
+  transition-delay: 0s;
+  fill: var(--heart-filling-color);
+}
+
+.like-icon:active .main-body {
+  opacity: 1;
+  cursor: pointer;
+  transition-delay: 0.05s;
+  fill: var(--heart-filling-color);
+}
+
+
 /* ⇈ реализация сердечка like-icon ⇈ */
 
 .footer__button {
