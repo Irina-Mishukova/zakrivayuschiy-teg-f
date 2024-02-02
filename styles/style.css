@@ -265,6 +265,30 @@
   opacity: 0;
 }
 
+.core {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.3s;
+}
+
+.main-body {
+  opacity: 0; 
+  transition: opacity 0.3;
+  transition-delay: 0.3s;
+}
+
+.like-icon:hover .core {
+  opacity: 1;
+  cursor: pointer;
+  transition-delay: 0s;
+}
+
+.like-icon:hover .main-body {
+  opacity: 1;
+  cursor: pointer;
+  transition-delay: 0.05s;
+}
+
 /* ⇈ реализация сердечка like-icon ⇈ */
 
 .footer__button {
