@@ -388,6 +388,8 @@ dialog {
   font-family: var(--accent-font);
   text-transform: uppercase;
   font-size: 14px;
+  width: 341px;
+  height: 191px;
 }
 
 .dialog_button {
@@ -398,6 +400,13 @@ dialog {
   font-family: var(--accent-font);
   text-transform: uppercase;
   font-size: 14px;
+}
+
+dialog:is([open]) form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 42px;
 }
 
 /* ⇈ реализация dialog ⇈ */
