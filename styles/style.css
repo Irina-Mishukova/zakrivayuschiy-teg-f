@@ -353,6 +353,16 @@
     }
 }
 
+.like-icon .main-body {
+  transition-delay: 0s;
+  transition: opacity 0s;
+}
+
+.like-icon .core {
+  transition-delay: 0s;
+  transition: opacity 0s;
+}
+
 /* ⇈ реализация сердечка like-icon ⇈ */
 
 .footer__button {
