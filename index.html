@@ -103,19 +103,19 @@
       </section>
     </main>
     <footer>
-      <button class="footer__button"     type="button" 
+      <button class="footer__button" type="button" 
       onclick="window['dialog-id'].showModal()" 
       aria-controls="dialog-id" >
         <span class="button__text">
           Сохранить на память
         </span>
       </button>
-      <dialog id="dialog-id">
-        <form>
+      <dialog id="dialog-id" class="modal-window">
+        <form class="modal-window_form">
             <span>
               Вставьте дискету, чтобы продолжить
             </span>
-            <button class="dialog_button" type="submit">
+            <button class="modal-window_button" type="submit">
               ок
             </button>
         </form>
