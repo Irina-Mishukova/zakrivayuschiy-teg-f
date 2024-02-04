@@ -395,6 +395,11 @@
   padding-block: 15px;
 }
 
+.floppy {
+  width: 21px;
+  height: auto;
+}
+
 /* ⇊ реализация dialog ⇊ */
 
 .modal-window::backdrop {
@@ -422,18 +427,17 @@
 }
 
 .modal-window:is([open]) .modal-window_form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 30px;
-  padding: 30px 42px;
+  align-self: center;
+  /* padding: 30px 42px; */
+}
+
+.modal-window_content {
+  display: flex;
 }
 
 /* ⇈ реализация dialog ⇈ */
-
-.floppy {
-  width: 21px;
-  height: auto;
-}
 
 @media (width <= 375px) {
   .header {
@@ -449,7 +453,6 @@
   }
 
   .footer__button {
-    /* display: flex; */
     flex-direction: column;
     width: 306px;
   } 
