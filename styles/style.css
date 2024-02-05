@@ -31,7 +31,7 @@
 .header {
   border: 2px solid var(--accent-color);
   margin-block-start: 100px;
-  margin-block-end: 104px;
+  margin-block-end: 100px;
   margin-inline: auto;
   width: clamp(696px,696px,100vw);
   margin-inline: minmax(100vw,372px);
@@ -45,6 +45,7 @@
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   padding-block-end: 18px;
+
 }
 
 .header__text {
@@ -183,6 +184,7 @@
   font-size: 18px;
   text-align: left;
   padding-inline-start: 10px;
+  padding-block: 5px 5px;
 }
 
 .card__text {
@@ -203,9 +205,10 @@
 
 .card__button {
   display: flex;
-  gap: 12px;
+  gap: 6px;
   justify-content: end;
   align-items: center;
+  padding-block-start: 17px;
 }
 
 .card__like-button {
@@ -464,6 +467,11 @@
 
   .section {
     width: 100vw;
+  }
+
+  .card_title {
+    display: block;
+    max-width: 300px;
   }
 
   .card__img {
