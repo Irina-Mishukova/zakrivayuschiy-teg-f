@@ -48,8 +48,6 @@
 }
 
 .header__text {
-  /* padding-block-end: 10px;
-  padding-block-start: 5px; */
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
@@ -92,11 +90,12 @@
   animation-timing-function: ease-in-out;
   animation-duration: alternate;
   position: absolute;
-  left: -100px;
+  left: -85px;
 } 
 
 .theme-menu__item {
   position: relative;
+  padding-inline-start: 21px;
 }
 
 @keyframes arrow_shift {
