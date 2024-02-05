@@ -143,6 +143,8 @@
   width: clamp(696px,696px,100vw);
   margin-inline: minmax(100vw,372px);
   margin-inline: auto;
+  display: grid;
+  gap: 50px;
 }
 
 .card {
