@@ -192,6 +192,8 @@
   gap: 27px;
   padding: 25px 25px 0px;
   font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: -2px;
 }
 
 .button_style {
