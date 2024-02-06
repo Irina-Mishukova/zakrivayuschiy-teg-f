@@ -44,7 +44,8 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  padding-block-end: 21px;
+  /* padding-block-end: 21px; */
+  padding-block-end: 18px;
 
 }
 
@@ -197,7 +198,8 @@
 .card__text {
   display: grid;
   gap: 27px;
-  padding: 21px 25px 0px;
+  /* padding: 21px 25px 0px; */
+  padding: 25px 25px 0px;
   font-size: 18px;
   line-height: 21px;
   font-weight: var(--font-weight-card-text);
@@ -475,7 +477,7 @@
     width: 100%;
     margin-block-start: 100px;
     padding-block-start: 120px;
-    margin-block-start: 134px;
+    /* margin-block-start: 134px; */
   }
 
   .section {
@@ -487,10 +489,9 @@
     max-width: 313px;
   }
 
-  /* .img__container {
-
-  min-height: 375px;
-  } */
+  .img__container {
+    max-height: 375px;
+  }
 
   .card__img {
     width: 100%;
