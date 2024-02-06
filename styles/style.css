@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--font-weight-card-text);
+  /* font-variation-settings: 'wght' var(--font-weight-card-text); */
   color: var(--accent-color);
   background-color: var(--background-color);
   background-image: var(--background-image);                  
@@ -35,7 +35,7 @@
   margin-inline: auto;
   width: clamp(696px,696px,100vw);
   margin-inline: minmax(100vw,372px);
-  padding-block-start: 120px;
+  padding-block-start: 136px;
   padding-block-end: 20px;
   background-color: var(--background-color);
   text-align: center;
@@ -44,7 +44,7 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  padding-block-end: 18px;
+  padding-block-end: 21px;
 
 }
 
@@ -199,8 +199,6 @@
   gap: 27px;
   padding: 21px 25px 0px;
   font-size: 18px;
-  /* letter-spacing: 1px;
-  word-spacing: -2px; */
   line-height: 21px;
   font-weight: var(--font-weight-card-text);
 }
@@ -263,6 +261,7 @@
   color: var(--buttom-like-text-color);
   mix-blend-mode: difference;
   cursor: pointer;
+  /* letter-spacing: -2px; */
 }
 
 /* ⇈ реалитзация кнопки like-button ⇈ */
@@ -474,6 +473,9 @@
 @media (width <= 375px) {
   .header {
     width: 100%;
+    margin-block-start: 100px;
+    padding-block-start: 120px;
+    margin-block-start: 134px;
   }
 
   .section {
@@ -482,7 +484,7 @@
 
   .card_title {
     display: block;
-    max-width: 305px;
+    max-width: 313px;
   }
 
   /* .img__container {
