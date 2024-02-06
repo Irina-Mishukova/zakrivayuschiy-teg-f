@@ -199,8 +199,8 @@
   gap: 27px;
   padding: 21px 25px 0px;
   font-size: 18px;
-  letter-spacing: 1px;
-  word-spacing: -2px;
+  /* letter-spacing: 1px;
+  word-spacing: -2px; */
   line-height: 21px;
   font-weight: var(--font-weight-card-text);
 }
