@@ -197,7 +197,7 @@
 .card__text {
   display: grid;
   gap: 27px;
-  padding: 25px 25px 0px;
+  padding: 21px 25px 0px;
   font-size: 18px;
   letter-spacing: 1px;
   word-spacing: -2px;
@@ -473,7 +473,7 @@
 
 @media (width <= 375px) {
   .header {
-    width: 100vw;
+    width: 100%;
   }
 
   .section {
@@ -482,11 +482,17 @@
 
   .card_title {
     display: block;
-    max-width: 300px;
+    max-width: 305px;
   }
+
+  /* .img__container {
+
+  min-height: 375px;
+  } */
 
   .card__img {
     width: 100%;
+    height: auto;
   }
 
   .footer__button {
