@@ -202,7 +202,6 @@
 
 .card__text {
   display: grid;
-  /* max-width: 645px; */
   gap: 27px;
   padding: 25px 25px 0px;
   font-size: 18px;
@@ -268,7 +267,6 @@
   color: var(--buttom-like-text-color);
   mix-blend-mode: difference;
   cursor: pointer;
-  /* letter-spacing: -2px; */
 }
 
 /* ⇈ реалитзация кнопки like-button ⇈ */
@@ -491,11 +489,19 @@
 
   .card_title {
     display: block;
-    max-width: 313px;
+    max-width: 316px;
   }
 
   .img__container {
-    max-height: 375px;
+    height: 375px;
+    width: 371px;
+  }
+
+  .img__container {
+    position: relative;
+    overflow: hidden;
+    height: 371px;
+    width: 371px;
   }
 
   .card__img {
