@@ -160,13 +160,18 @@
 
 .img__container {
   position: relative;
+  overflow: hidden;
+  height: 700px;
+  width: 692px;
 }
 
 .card__img {
-  width: 100%;
-  /* position: relative; */
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 .img__label {
@@ -527,12 +532,16 @@
   .filter_invert {
     filter: invert(100%);
   }
+
+  .filter_filter {
+      filter: invert(100%);
+  }
   
-  .filter_sepia {
+  .filter_class {
     filter: sepia(0.6);
   }
 
-  .filter_hue-rotate {
+  .filter_class {
     filter: hue-rotate(0.5turn);
   }
 
