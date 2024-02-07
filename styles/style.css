@@ -172,6 +172,38 @@
   
 }
 
+.filter_brightness {
+  filter: brightness(90%);
+}
+
+.filter_saturate {
+  filter:saturate(200%)
+}
+
+.filter_blur {
+  filter: blur(4px);
+}
+
+.filter_contrast {
+  filter: contrast(120%);
+}   
+
+.filter_csepia {
+  filter: sepia(0.4);
+}
+
+.filter_chue-rotate {
+  filter: hue-rotate(0.2turn);
+}
+
+.filter_grayscale {
+  filter: grayscale(70%);
+}
+
+.many_filters {
+  filter: contrast(120%) saturate(120%);
+}
+
 .img__label {
   font-family: var(--accent-font);
   font-size: 14px;
@@ -514,37 +546,4 @@
   .modal-window_button {
     width: 257px;
   }
-  }
-
-
-.filter_brightness {
-  filter: brightness(90%);
-}
-
-.filter_saturate {
-  filter:saturate(200%)
-}
-
-.filter_blur {
-  filter: blur(4px);
-}
-
-.filter_contrast {
-  filter: contrast(120%);
-}   
-
-.filter_csepia {
-  filter: sepia(0.4);
-}
-
-.filter_chue-rotate {
-  filter: hue-rotate(0.2turn);
-}
-
-.filter_grayscale {
-  filter: grayscale(70%);
-}
-
-.many_filters {
-
   }
