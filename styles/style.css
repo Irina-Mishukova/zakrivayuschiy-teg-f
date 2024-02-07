@@ -32,8 +32,7 @@
   margin-block-start: 100px;
   margin-block-end: 100px;
   margin-inline: auto;
-  width: clamp(696px,696px,100vw);
-  margin-inline: minmax(100vw,372px);
+  width: clamp(700px,700px,100vw);
   padding-block-start: 136px;
   padding-block-end: 20px;
   background-color: var(--background-color);
@@ -143,7 +142,6 @@
 
 .section {
   width: clamp(700px,700px,100vw);
-  margin-inline: minmax(100vw,372px);
   margin-inline: auto;
   display: grid;
   gap: 50px;
