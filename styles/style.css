@@ -144,7 +144,7 @@
 }
 
 .section {
-  width: clamp(696px,696px,100vw);
+  width: clamp(700px,700px,100vw);
   margin-inline: minmax(100vw,372px);
   margin-inline: auto;
   display: grid;
@@ -162,7 +162,7 @@
   position: relative;
   overflow: hidden;
   height: 700px;
-  width: 692px;
+  width: 700px;
 }
 
 .card__img {
