@@ -206,16 +206,26 @@
 .img__label {
   font-family: var(--accent-font);
   font-size: 14px;
+  text-transform: uppercase;
   position: absolute;
-  left: 40cqi;
-  bottom: 62cqb;
+  inset-inline-end: 0;
+  padding-inline-end: 25px;
+  padding-block-start: 27px;
   mix-blend-mode: hard-light;
   color: var(--accent-color);
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #FFF;
-  text-shadow: 0px 0px 5px #FFF;
+  text-shadow: 0px 0px 5px black;
   opacity: 0.5;
 }
+
+@supports((text-stroke: 1px #FFF) or (-webkit-text-stroke: 1px #FFF)) {
+  .img__label {
+      -webkit-text-stroke: 1px #FFF;
+      text-stroke: 1px #FFF;
+      text-shadow: none;
+  }
+} 
 
 .card_title {
   font-size: 18px;
