@@ -91,6 +91,7 @@
   animation-duration: alternate;
   position: absolute;
   left: -85px;
+  top: 0;
 } 
 
 .theme-menu__item {
