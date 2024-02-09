@@ -316,6 +316,7 @@
   height: 34px;
   outline: 2px solid;
   color: transparent;
+  transition: color 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -324,7 +325,7 @@
 
 .card__icon-button:focus-visible {
   color: var(--accent-color);
-  transition: color 0.3s ease;
+  /* transition: color 0.3s ease; */
 }
 
 .like-icon {
