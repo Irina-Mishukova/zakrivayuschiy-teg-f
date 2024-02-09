@@ -205,7 +205,7 @@
 }
 
 .img__label {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-transform: uppercase;
   position: absolute;
@@ -250,7 +250,7 @@
   border: none;
   background-color: var(--background-color);
   outline: 2px solid var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
 }
 
 /*⇊ реалитзация кнопки like-button ⇊*/
