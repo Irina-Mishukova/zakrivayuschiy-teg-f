@@ -476,34 +476,36 @@
           </div>
         </article>
       </section>
-    </main>
-    <footer class="footer">
-      <button class="footer__button button_style" type="button" 
-      onclick="window['dialog-id'].showModal()" 
-      aria-controls="dialog-id" >
-      <svg  class="floppy" width="39" height="39" viewBox="0 0 39 39">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-        <span class="button__text">
-          Сохранить на память
-        </span>
-      </button>
-      <dialog id="dialog-id" class="modal-window">
-        <form class="modal-window_form" method="dialog">
-          <div class="modal-window_content" >
-            <svg  class="floppy" width="39" height="39" viewBox="0 0 39 39">
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
-            <span class="modal-window_text">
-              Вставьте дискету, чтобы продолжить
-            </span>
-          </div>
+
+      <div class="dialog">
+        <button class="dialog__button button_style" type="button" 
+          onclick="window['dialog-id'].showModal()" 
+          aria-controls="dialog-id" >
+          <svg  class="floppy" width="39" height="39" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">
+            Сохранить на память
+          </span>
+        </button>
+        <dialog id="dialog-id" class="modal-window">
+          <form class="modal-window_form" method="dialog">
+            <div class="modal-window_content" >
+              <svg  class="floppy" width="39" height="39" viewBox="0 0 39 39">
+                <use href="./svg/floppy.svg#floppy"></use>
+              </svg>
+              <span class="modal-window_text">
+                Вставьте дискету, чтобы продолжить
+              </span>
+            </div>
             <button class="modal-window_button button_style" type="submit">
               ок
             </button>
-        </form>
-    </dialog>
-    </footer>
+          </form>
+        </dialog>
+      </div>
+
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

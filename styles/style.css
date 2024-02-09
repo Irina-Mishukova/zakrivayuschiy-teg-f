@@ -436,11 +436,7 @@
 
 /* ⇈ реализация сердечка like-icon ⇈ */
 
-.footer {
-  margin-inline: auto;
-}
-
-.footer__button {
+.dialog__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -545,7 +541,7 @@
     height: auto;
   }
 
-  .footer__button {
+  .dialog__button {
     flex-direction: column;
     width: 306px;
   } 
