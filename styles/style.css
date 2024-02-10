@@ -38,7 +38,7 @@
   padding-block-end: 20px;
   background-color: var(--background-color);
   text-align: center;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, sans-serif;
 }
 
 .header__title {
@@ -194,7 +194,7 @@
 }
 
 .img__label {
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), fantasy, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   position: absolute;
@@ -244,7 +244,7 @@
   border: none;
   background-color: var(--background-color);
   outline: 2px solid var(--accent-color);
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), fantasy, sans-serif;
   overflow: hidden;
   position: relative;
   transition: box-shadow 0.5s;
@@ -365,7 +365,7 @@
   border: none;
   outline: 2px solid var(--accent-color);
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
