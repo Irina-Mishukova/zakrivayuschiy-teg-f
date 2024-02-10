@@ -101,18 +101,6 @@
   padding-inline-start: 21px;
 }
 
-@keyframes arrow_shift {
-  0% {
-    right: 0px;
-  }
-  50% {
-    right: 4px;
-  }
-  100% {
-    right: 0px;
-  }
-} 
-
 /* ⇈ реализация движения стрелки в меню навигации ⇈ */
 
 .theme-menu__button:hover {
@@ -347,93 +335,6 @@
 .main-body {
   opacity: 0; 
   transition: opacity 0.3;
-}
-
-.like-icon.is-liked .contour {
-  opacity: 1;
-  transition: fill 0.3;
-  transition-delay: 0.3s;
-}
-
-.like-icon:hover .core {
-  opacity: 1;
-  cursor: pointer;
-  transition-delay: 0s;
-}
-
-.like-icon:hover .main-body {
-  opacity: 1;
-  cursor: pointer;
-  transition-delay: 0.05s;
-}
-
-.like-icon:active .core {
-  opacity: 1;
-  transition-delay: 0s;
-  fill: var(--heart-filling-color);
-}
-
-.like-icon:active .main-body {
-  opacity: 1;
-  transition-delay: 0.05s;
-  fill: var(--heart-filling-color);
-}
-
-.like-icon.is-liked .core {
-  opacity: 1;
-  transition-delay: 0s;
-  fill: var(--heart-filling-color);
-}
-
-.like-icon.is-liked .main-body {
-  opacity: 1;
-  transition-delay: 0.05s;
-  fill: var(--heart-filling-color);
-}
-
-.like-icon.is-liked .contour {
-  opacity: 1;
-  transition-delay: 0.06s;
-  fill: var(--heart-filling-color);
-}
-
-.like-icon.is-liked .sparks {
-    animation: like-icon-sparks 0.3s ease-in 0.3s 1 alternate;
-}
-
-@keyframes like-icon-sparks {
-  0% {
-    opacity: 0;
-    }
-
-  100% {
-    opacity: 1;
-    }
-}
-
-.like-icon.is-liked .heart {
-   animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
-   transform-origin: center;
-}
-
-@keyframes heart-scale {
-  0% {
-    transform: scale(1)
-    }
-
-  100% {
-    transform: scale(1.5)
-    }
-}
-
-.like-icon .main-body {
-  transition-delay: 0s;
-  transition: opacity 0s;
-}
-
-.like-icon .core {
-  transition-delay: 0s;
-  transition: opacity 0s;
 }
 
 /* ⇈ реализация сердечка like-icon ⇈ */
