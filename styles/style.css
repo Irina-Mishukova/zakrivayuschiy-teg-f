@@ -326,17 +326,6 @@
   opacity: 0;
 }
 
-.core {
-  opacity: 0;
-  transition: opacity 0.3s;
-  transition-delay: 0.3s;
-}
-
-.main-body {
-  opacity: 0; 
-  transition: opacity 0.3;
-}
-
 /* ⇈ реализация сердечка like-icon ⇈ */
 
 .dialog__button {
