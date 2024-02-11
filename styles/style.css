@@ -33,7 +33,7 @@
   margin-block-start: 100px;
   margin-block-end: 100px;
   margin-inline: auto;
-  width: clamp(700px,700px,100vw);
+  max-width: 700px;
   padding-block-start: 136px;
   padding-block-end: 20px;
   background-color: var(--background-color);
@@ -46,7 +46,6 @@
   display: block;
   padding-block-end: 18px;
   text-decoration: none;
-
 }
 
 .header__text {
@@ -74,8 +73,6 @@
   text-transform: uppercase;
 }
 
-/* ⇊ реализация движения стрелки в меню навигации ⇊ */
-
 .theme-menu__button::before {
   content: '';
   padding: 0;
@@ -100,8 +97,6 @@
   position: relative;
   padding-inline-start: 21px;
 }
-
-/* ⇈ реализация движения стрелки в меню навигации ⇈ */
 
 .theme-menu__button:hover {
   opacity: 0.6;
@@ -133,7 +128,8 @@
 }
 
 .section {
-  width: clamp(700px,700px,100vw);
+  max-width: 700px;
+  /* max-height: 700px; */
   margin-inline: auto;
   display: grid;
   gap: 50px;
@@ -148,9 +144,8 @@
 
 .img__container {
   overflow: hidden;
-  height: 700px;
-  width: 700px;
   position: relative;
+  max-height: 700px;
 }
 
 .card__img {
@@ -235,8 +230,6 @@
   font-variation-settings: 'wght' var(--font-weight-card-text);
 }
 
-/*⇊ единая стилизация всех кнопок ⇊*/
-
 .button {
   display: flex;
   align-items: center;
@@ -287,10 +280,6 @@
   cursor: pointer;
 }
 
-/* ⇈ единая стилизация всех кнопок ⇈ */
-
-/*⇊ реалитзация кнопки like-button ⇊*/
-
 .card__button__container {
   display: flex;
   gap: 8px;
@@ -305,8 +294,6 @@
   height: 34px;
   padding: 0px;
 }
-
-/* ⇈ реалитзация кнопки like-button ⇈ */
 
 .dialog__button {
   gap: 8px;
@@ -325,8 +312,6 @@
   z-index: 1;
   color: var(--buttom-like-text-color);
 }
-
-/* ⇊ реализация dialog ⇊ */
 
 .modal-window::backdrop {
   background-color: rgb(0 0 0 / 0.75);
@@ -375,8 +360,6 @@
   display: block;
   max-width: 200px;
 }
-
-/* ⇈ реализация dialog ⇈ */
 
 @media (width <= 375px) {
   .header {
