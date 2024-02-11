@@ -397,13 +397,8 @@
   .img__container {
     height: 375px;
     width: 371px;
-  }
-
-  .img__container {
     position: relative;
     overflow: hidden;
-    height: 375px;
-    width: 371px;
   }
 
   .card__img {
