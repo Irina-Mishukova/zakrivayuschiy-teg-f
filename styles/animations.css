@@ -13,6 +13,32 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.card__icon-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 34px;
+    outline: 2px solid;
+    color: transparent;
+    transition: color 0.3s ease;
+  }
+  
+.card__icon-button:focus {
+    border: none;
+}
+  
+.card__icon-button:focus-visible {
+    color: var(--accent-color);
+}
+
+.like-icon {
+    height: 100%;
+}
+  
+.sparks {
+    opacity: 0;
+}
+
 .core {
     opacity: 0;
     transition: opacity 0.3s linear;

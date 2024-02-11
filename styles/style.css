@@ -306,36 +306,6 @@
 
 /* ⇈ реалитзация кнопки like-button ⇈ */
 
-/* ⇊ реализация сердечка like-icon ⇊ */
-
-.card__icon-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  height: 34px;
-  outline: 2px solid;
-  color: transparent;
-  transition: color 0.3s ease;
-}
-
-.card__icon-button:focus {
-  border: none;
-}
-
-.card__icon-button:focus-visible {
-  color: var(--accent-color);
-}
-
-.like-icon {
-  height: 100%;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-/* ⇈ реализация сердечка like-icon ⇈ */
-
 .dialog__button {
   gap: 8px;
   margin-block-start: 54px;
@@ -369,15 +339,14 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
+  padding: 0px;
 }
 
 .modal-window_button {
-  color: var(--accent-color);
   text-transform: uppercase;
-  font-size: 14px;
-  cursor: pointer;
   height: 38px;
   width: 293px;
+  padding: 0px;
 }
 
 .modal-window:is([open]) .modal-window_form {

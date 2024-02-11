@@ -477,7 +477,7 @@
         </article>
       </section>
 
-      <div class="dialog">
+      <!-- <div class="dialog"> -->
         <button class="dialog__button button" type="button" 
           onclick="window['dialog-id'].showModal()" 
           aria-controls="dialog-id" >
@@ -488,6 +488,7 @@
             Сохранить на&nbsp;память
           </span>
         </button>
+        
         <dialog id="dialog-id" class="modal-window">
           <form class="modal-window_form" method="dialog">
             <div class="modal-window_content" >
@@ -499,11 +500,11 @@
               </span>
             </div>
             <button class="modal-window_button button" type="submit">
-              ок
+              <span class="button__text">ок</span>
             </button>
           </form>
         </dialog>
-      </div>
+      <!-- </div> -->
 
     </main>
     <script src="./scripts/like.js"></script>
