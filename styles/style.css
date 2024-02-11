@@ -293,15 +293,17 @@
 
 .card__button__container {
   display: flex;
-  gap: 6px;
+  gap: 8px;
   justify-content: end;
   align-items: center;
+  height: fit-content;
+  margin: 25px 27px 27px 0px;
 }
 
 .card__like-button {
-  margin: 25px 25px 25px 0px;
-  width: 130px;
-  height: 38px;
+  width: 126px;
+  height: 34px;
+  padding: 0px;
 }
 
 /* ⇈ реалитзация кнопки like-button ⇈ */

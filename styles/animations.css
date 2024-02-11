@@ -21,7 +21,7 @@
     outline: 2px solid;
     color: transparent;
     transition: color 0.3s ease;
-  }
+}
   
 .card__icon-button:focus {
     border: none;
@@ -29,6 +29,7 @@
   
 .card__icon-button:focus-visible {
     color: var(--accent-color);
+    outline: 2px solid var(--accent-color);
 }
 
 .like-icon {
