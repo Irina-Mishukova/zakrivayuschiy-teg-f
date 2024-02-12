@@ -71,6 +71,7 @@
   background-color: transparent;
   border: none;
   text-transform: uppercase;
+  transition: opacity 1s;
 }
 
 .theme-menu__button::before {
@@ -109,7 +110,6 @@
 
 .theme-menu__button:focus-visible {
   opacity: 0.6;
-  transition: opacity 1s;
 }
 
 .theme-menu__button::after {
