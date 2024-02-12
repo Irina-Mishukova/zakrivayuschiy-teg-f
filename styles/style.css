@@ -129,7 +129,6 @@
 
 .section {
   max-width: 700px;
-  /* max-height: 700px; */
   margin-inline: auto;
   display: grid;
   gap: 50px;
@@ -286,12 +285,12 @@
   justify-content: end;
   align-items: center;
   height: fit-content;
-  margin: 25px 27px 27px 0px;
+  margin: 25px 25px 25px 0px;
 }
 
 .card__like-button {
   width: 126px;
-  height: 34px;
+  height: 38px;
   padding: 0px;
 }
 
@@ -364,7 +363,6 @@
 @media (width <= 375px) {
   .header {
     width: 100%;
-    margin-block-start: 100px;
     padding-block-start: 120px;
   }
 
